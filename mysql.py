@@ -14,7 +14,7 @@ try:
 
     # try:
     #     with connection.cursor() as cur:
-    #         new_table = 'CREATE TABLE `ncos`(id int AUTO_INCREMENT, name varchar(32), dob DATE, dod int, pay_grade varchar(32), PRIMARY KEY (id));'
+    #         new_table = 'CREATE TABLE `ncos`(id int AUTO_INCREMENT, name varchar(32), dob DATE, dod int, pay_grade varchar(32), PRIMARY KEY (id));' # NCO it's a list of Non Commision officers and information about them
     #
     #         cur.execute(new_table)
     # finally:
@@ -23,7 +23,7 @@ try:
 
     try:
         with connection.cursor() as cur:
-           insert_query = 'INSERT INTO `ncos`(name,pay_grade) VALUE ("Alan Po", "E-6");'
+           insert_query = 'INSERT INTO `ncos`(name,pay_grade) VALUE ("Alan Po", "E-6");' # We add information with name and pay grade
            cur.execute(insert_query)
            connection.commit()
         print("Everything connected")
