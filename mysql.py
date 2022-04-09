@@ -1,5 +1,5 @@
 import pymysql
-from config import user, password, host, db_name
+from config import user, password, host, db_name # we must to create config.py and add information to connect python with mysql.
 
 
 try:
